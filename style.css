@@ -1,0 +1,13 @@
+:root {
+--bg-dark: #181818;
+--bg-light: #ffffff;
+--text-light: #181818;
+--text-dark: #ffffff;
+}
+
+html, body {
+padding: 0;
+margin: 0;
+background: var(--bg-dark);
+color: var(--text-dark);
+}
