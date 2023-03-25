@@ -4,16 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="card.css">
+
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+<!-- end google fonts -->
 	
 	<title>Welcome</title>
 </head>
 <body>
 
-<nav>
-  <div id="navContent">
+
+<nav id="navbar">
+  <div id="nav-content">
     <a href="index.html">Home</a>
     <a href="blog-hub.html">About</a>
     <a href="blog.html">Blog</a>
@@ -21,12 +27,81 @@
 </nav>
 
 
-<section id="page-top">
-	<div id="welcome">Thank you for visiting my site, Please take a look around at the various things I can offer you.</div>
+<main>
+	<div id="hero">
+		<div class="hero-content">
+			<div class="profile-pic"></div>
+			<div>
+			<h1>Eric<br>Gonnella</h1>
+				<div class="skills-list">
+				<p>Website Developer</p>
+				<p>·</p>
+				<p>Content Manager</p>
+				<p>·</p>
+				<p>SEO Specialist</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<section class="section-style" id="about">
+ <h2>About</h2>
+	<div class="about-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut augue sodales eros gravida varius ac a leo. Vivamus tincidunt blandit felis, in gravida odio aliquet et. Vestibulum congue libero egestas, dictum libero quis, hendrerit elit. Praesent et orci nec lacus imperdiet malesuada et vel dolor. Duis vitae placerat nibh. Nulla ornare tincidunt dui, eget ornare felis ullamcorper in. Aliquam velit neque, venenatis eget felis sed, pellentesque sagittis ipsum. Quisque sodales non dolor quis gravida. Donec id nunc et felis iaculis porta. Vestibulum tempus porta posuere.</p>
+	</div>
+</section>
+
+<section class="section-style" id="projects">
+<h2>Projects</h2>
+<div class="projects-container">
+		 <div class="card">
+	<div class="card-inner">
+		<div class="card-front">
+			
+		</div>
+		<div class="card-back">
+			<p>This text is here to describe what is going on in the pic</p>
+			<a href="card.html" class="card-button">Visit The Site</a>
+		</div>
+	</div>
+ </div>
+
+  <div class="card">
+	<div class="card-inner">
+		<div class="card-front">
+			
+		</div>
+		<div class="card-back">
+			<p>This text is here to describe what is going on in the pic</p>
+			<a href="#" class="card-button">Visit The Site</a>
+		</div>
+	</div>
+ </div>
+
+  <div class="card">
+	<div class="card-inner">
+		<div class="card-front">
+			
+		</div>
+		<div class="card-back">
+			<p>This text is here to describe what is going on in the pic</p>
+			<a href="#" class="card-button">Visit The Site</a>
+		</div>
+	</div>
+ </div>
+
+</div>
 </section>
 
 
 
+
+
+</main>
+
+<footer></footer>
 
 <script type="text/javascript" src="app.js"></script>
 </body>

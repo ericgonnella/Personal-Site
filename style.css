@@ -1,88 +1,216 @@
+* {
+
+}
+
+
 :root {
 --bg-dark: #181818;
 --bg-light: #ffffff;
 --text-light: #181818;
 --text-dark: #ffffff;
-font-family: 'Raleway', sans-serif;
+font-family: 'Lato', sans-serif;
 }
 
+html {
+
+
+}
 
 html, body {
-background: var(--bg-dark);
+background: url('image/Abstract Paper.svg');
+background-size: contain;
 padding: 0;
 margin: 0;
-
+color: var(--text-dark);
+scroll-behavior: smooth;
 }
 
-/* Nav Bar */
-nav {
-display: flex;
-justify-content: center;
+
+#navbar {
 position: sticky;
 top: 0;
-padding: 15px 0px;
-background: var(--bg-dark);
-}
-
-#navContent {
-width: 50%;
 display: flex;
-justify-content: space-around;  
+width: 100%;
+z-index: 9;
+background: rgba( 22, 22, 22, 0.9);
 }
 
-#navContent a{
+#nav-content {
+padding: 20px 20px;
+}
+
+#nav-content a{
 color: var(--text-dark);
 text-decoration: none;
+padding: 0px 10px;
 }
 
-#navContent a:hover {
-opacity: 25%;
-}
-/* Nav Bar */
 
-#page-top {
-width: 100%;
+#hero {
+margin-top: 10%;
+margin-bottom: 20%;
 display: flex;
 justify-content: center;
 }
 
-#welcome {
-margin-top: 25px;
-box-shadow: rgba(255,255,255, 0.5) 0px 2px 8px 0px;
-border-radius: 12px;
-background: #f2f2f2;
-padding: 20px 25px;
-text-align: center;
+
+.hero-content {
+display: flex;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.hero-content h1 {
+font-size: 5em;
+margin-bottom: 0px;
+margin-top: 10px;
+}
+
+
+.skills-list {
+display: flex;
+gap: 10px;  
+}
+
+
+
+.profile-pic {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+border: 5px solid var(--bg-light);
+background: var(--bg-light);
+background-image: url('image/Profile-pic.jpg');
+background-size: cover;
+}
+
+.section-style {
+margin-top: 4%;
+padding: 10% 90px;
+}
+
+#about {
+/* background: #313131; */
+background: rgba( 49, 49, 49, 0.7 );
+box-shadow: rgba(102, 102, 102, 0.2) 6px 7px 12px 3px;
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#about p {
+width: 80%;
+font-size: 1.2em;
+}
+
+.about-content {
+display: flex;
+justify-content: center;
+line-height: 1.5;
+}
+
+#projects {
+padding: 50px 90px !important;
+}
+
+.projects-container {
+margin-top: 5%;
+display: flex;
+width: 100%;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.project-card {
+border: 1px solid var(--bg-light);
+border-radius: 8px; 
+height: 300px;
+width: 500px;
+background: ghostwhite;
+box-shadow: rgba(102, 102, 102, 0.2) 6px 7px 12px 3px;
+}
+
+.card1 {
+background-image: url('image/Personal-Dashboard.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.card2 {
+background-image: url('image/The Los Alamos Star.png');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.card3 {
+background-image: url('image/The Los Alamos Star.png');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.card-position {
+display: flex;
+justify-content: center;
+margin-top: 100px;
+margin-bottom: 1000px;
+}
+
+.card {
 color: black;
-font-weight: bold;
+width: 500px;
+height: 300px;
+border-radius: 8px;
+perspective: 1000px;
 }
 
-
-#slider {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+.card-front {
+border: 2px solid white;
+border-radius: 8px;
+background-image: url('image/Personal-Dashboard.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
-.slide {
+.card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  float: left;
-}
-
-#pagination {
-  width: 100%;
   text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-#pagination a {
-  padding: 5px 10px;
-  color: #000;
-  text-decoration: none;
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+
 }
 
-#pagination a.active {
-  color: #fff;
-  background-color: #000;
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility:  hidden;
+backface-visibility: hidden;
 }
 
+.card-back {
+border: 2px solid white;
+border-radius: 8px;
+background-color: black; 
+color: white;
+transform: rotateY(180deg);
+}
+
+
+
+footer {
+margin-top: 10%;
+height: 200px;
+background: #000000;
+}
