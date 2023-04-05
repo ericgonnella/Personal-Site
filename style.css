@@ -74,14 +74,12 @@ border: 3px solid white;
 }
 
 
-.skills-list-desktop {
+.skills-list {
 display: flex;
 gap: 10px;
 }
 
-.skills-list-mobile {
-display: none;
-}
+
 
 /* ----- intro end --- */
 
